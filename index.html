@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sorteador de Nomes</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <h1>Sorteador de Nomes</h1>
-  
+
   <div class="container-add">
     <input type="text" id="novoNome" placeholder="Digite um nome">
     <button id="btnAdicionar">Adicionar Nome</button>
@@ -25,31 +27,40 @@
     <li>Eduarda</li>
     <li>Emilly</li>
     <li>Érica</li>
-    <li>Gabriel</li>
     <li>Guilherme</li>
-    <li>Gustavo Chimello</li>
-    <li>Kaio</li>
+    <li>Gustavo Chimello (Legendary Rocket Raccoon)</li>
+    <li>Kaio (Meu Chapéu)</li>
     <li>Ketlen</li>
     <li>Letícia</li>
     <li>Luana</li>
     <li>Lucas</li>
     <li>Mestre Thiago</li>
     <li>Murilo</li>
-    <li>Nicolas</li>
+    <li>Nicolas (Nicão da Mira Kent)</li>
     <li>Nátali</li>
-    <li>Olavo Xavier</li>
+    <li>Olavo Xavier (The True Gamer)</li>
     <li>Pablo</li>
-    <li>Pedro</li>
+    <li>Pedro (Pedro Panteras)</li>
     <li>Saionara</li>
-    <li>William</li>
+    <li>William (O Willuminado)</li>
   </ul>
-  
+
   <button id="btnSortear">Sortear Nome</button>
   <button id="btnResetar">Resetar</button>
-  
-  <h2>Nome sorteado: <span id="resultado"></span></h2>
+
+  <div id="countdown"></div>
+
+  <div id="resultado-container" class="hidden">
+    <div class="circle" id="circle">
+      <span id="inicial"></span>
+      <img id="foto" class="hidden" alt="Foto sorteado">
+    </div>
+    <h2 id="resultado"></h2>
+  </div>
+
   <p id="mensagem"></p>
-  
+
   <script src="script.js" defer></script>
 </body>
+
 </html>
