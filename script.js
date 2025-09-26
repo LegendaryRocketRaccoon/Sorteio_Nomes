@@ -4,7 +4,8 @@ let nomes = [...nomesIniciais];
 const imagens = {
   "Bruno": "Bruno.jpeg",
   "Gustavo Chimello (Legendary Rocket Raccoon)": "Gustavo.jpeg",
-  "Olavo Xavier (The True Gamer)": "Olavo.jpeg"
+  "Olavo Xavier (The True Gamer)": "Olavo.jpeg",
+  "Kaio (Meu Chapéu)": "Kaio.jpg"
 };
 
 const countdownDiv = document.getElementById("countdown");
@@ -118,3 +119,4 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnSortear").addEventListener("click", sortearNome);
   document.getElementById("btnResetar").addEventListener("click", resetarSorteio);
 });
+
